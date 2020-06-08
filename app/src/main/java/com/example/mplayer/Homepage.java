@@ -1,5 +1,6 @@
 package com.example.mplayer;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -15,6 +16,9 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.provider.MediaStore;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -222,6 +226,27 @@ public class Homepage extends AppCompatActivity {
             }
         }*/
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.nav_log :
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                finish();
+                return true;
+            case R.id.nav_fee:
+                startActivity(new Intent(Homepage.this,Feedback.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     public void Logout(View view)
     {
