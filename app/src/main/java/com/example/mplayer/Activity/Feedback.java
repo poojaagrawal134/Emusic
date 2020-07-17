@@ -1,4 +1,4 @@
-package com.example.mplayer;
+package com.example.mplayer.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.mplayer.R;
 
 public class Feedback extends AppCompatActivity {
     Button fed;

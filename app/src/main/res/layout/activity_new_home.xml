@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.NewHome">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:id="@+id/l1"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="100dp"
+        android:text="Happiness : "
+        android:layout_marginTop="20sp"
+        android:textColor="#000"
+        android:layout_marginLeft="20sp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Your Emotion"
+        android:layout_weight="1"
+        android:layout_marginTop="20sp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/happ"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@id/l1"
+        android:id="@+id/l2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:text="Sadness : "
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Your Emotion"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sad"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l3"
+        android:layout_below="@id/l2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:text="Suprise : "
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Your Emotion"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/surprise"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l4"
+        android:layout_below="@id/l3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:text="Neutral : "
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Your Emotion"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/neutral"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l4"
+        android:id="@+id/l5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:text="Anger : "
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Your Emotion"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/anger"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l5"
+        android:id="@+id/l6"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:text="Contempt : "
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Your Emotion"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/contempt"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l6"
+        android:id="@+id/l7"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:text="Disgust : "
+
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Your Emotion"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/disgust"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l7"
+        android:id="@+id/l8"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:text="Fear : "
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Your Emotion"
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fear"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupButton"
+        android:layout_below="@id/l8"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/selectgallary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select From Gallary" />
+
+        <Button
+            android:id="@+id/btnDetectFace"
+            android:layout_weight="1"
+            android:text="Take Picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/groupButton"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/finresult"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/MusicBtn"
+                android:textSize="20sp"
+                android:text="Click here to Play Music"
+                />
+        </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,4 +1,4 @@
-package com.example.mplayer;
+package com.example.mplayer.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mplayer.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -45,7 +46,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
         if (mAuth.getCurrentUser() != null) {
             finish();
-            startActivity(new Intent(this, Homepage.class));
+            startActivity(new Intent(this, NewHome.class));
         }
     }
 
@@ -84,7 +85,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                 pbar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
                     finish();
-                    Intent intent = new Intent(Login.this, Homepage.class);
+                    Intent intent = new Intent(Login.this, NewHome.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 } else {

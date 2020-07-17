@@ -1,4 +1,4 @@
-package com.example.mplayer;
+package com.example.mplayer.Model;
 
 public class Song {
     private String songName,songUrl;

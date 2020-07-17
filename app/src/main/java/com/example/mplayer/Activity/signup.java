@@ -1,4 +1,4 @@
-package com.example.mplayer;
+package com.example.mplayer.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mplayer.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -81,7 +82,7 @@ public class signup extends AppCompatActivity implements View.OnClickListener {
                 if (task.isSuccessful())
                 {
                     finish();
-                    startActivity(new Intent(signup.this, Homepage.class));
+                    startActivity(new Intent(signup.this, NewHome.class));
 
                 }
                 else

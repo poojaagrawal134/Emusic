@@ -14,20 +14,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Feedback"></activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Activity.FearActivity"></activity>
+        <activity android:name=".Activity.AngryActivity" >
+
+        </activity>
+        <activity android:name=".Activity.SadActivity" />
+        <activity android:name=".Activity.HappyActivity" />
+        <activity android:name=".Activity.NewHome" />
+        <activity android:name=".Activity.Feedback" />
+        <activity android:name=".Activity.SplashActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"></activity>
-        <activity android:name=".signup" />
-        <activity android:name=".Emotion" />
-        <activity android:name=".Homepage" />
-        <activity android:name=".Camera" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.Login" />
+        <activity android:name=".Activity.signup" />
     </application>
 
 </manifest>

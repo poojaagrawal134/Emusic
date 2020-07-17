@@ -1,4 +1,4 @@
-package com.example.mplayer;
+package com.example.mplayer.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.mplayer.Activity.Login;
+import com.example.mplayer.R;
 
 
 public class SplashActivity extends AppCompatActivity {
@@ -17,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent home=new Intent(getApplicationContext(),Login.class);
+                Intent home=new Intent(getApplicationContext(), Login.class);
                 startActivity(home);
                 finish();
             }
